@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import Problem from "@/components/Problem";
 import Process from "@/components/Process";
 import WhatYouGet from "@/components/WhatYouGet";
+import Packages from "@/components/Packages";
 import Calculator from "@/components/Calculator";
 import SocialProof from "@/components/SocialProof";
 import FAQ from "@/components/FAQ";
@@ -17,6 +18,7 @@ export default function Home() {
       <Problem />
       <Process />
       <WhatYouGet />
+      <Packages />
       <Calculator />
       <SocialProof />
       <FAQ />

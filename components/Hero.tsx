@@ -1,25 +1,21 @@
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
-      {/* Background gradient orbs */}
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-brand-500/10 rounded-full blur-[128px] pointer-events-none" />
       <div className="absolute bottom-1/4 right-1/4 w-72 h-72 bg-brand-600/8 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="max-w-4xl mx-auto text-center relative z-10">
-        {/* Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass text-sm text-brand-400 mb-8">
           <span className="w-2 h-2 rounded-full bg-brand-400 animate-pulse-slow" />
           Now accepting creator partnerships
         </div>
 
-        {/* Headline */}
         <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] mb-6">
           Turn Your Audience
           <br />
           <span className="gradient-text">Into Revenue</span>
         </h1>
 
-        {/* Subheadline */}
         <p className="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed">
           I partner with creators to build, launch, and sell digital products
           &mdash; you bring the audience, I handle everything else.{" "}
@@ -28,10 +24,11 @@ export default function Hero() {
           </span>
         </p>
 
-        {/* CTAs */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href="#contact"
+            href="https://calendly.com/njessemandevamirtham/15-min-strategy-call"
+            target="_blank"
+            rel="noopener noreferrer"
             className="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-semibold text-lg transition-all hover:shadow-lg hover:shadow-brand-500/25"
           >
             Book a Free Strategy Call
@@ -44,7 +41,6 @@ export default function Hero() {
           </a>
         </div>
 
-        {/* Quick stats */}
         <div className="mt-16 grid grid-cols-3 gap-8 max-w-lg mx-auto">
           <div>
             <div className="text-2xl font-bold text-brand-400">$0</div>
@@ -61,7 +57,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
         <span className="text-xs text-gray-600">Scroll</span>
         <div className="w-5 h-8 rounded-full border border-gray-700 flex items-start justify-center p-1">

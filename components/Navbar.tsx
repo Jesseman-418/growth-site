@@ -14,7 +14,7 @@ export default function Navbar() {
 
   const navLinks = [
     { label: "How It Works", href: "#process" },
-    { label: "What You Get", href: "#benefits" },
+    { label: "Services", href: "#packages" },
     { label: "Calculator", href: "#calculator" },
     { label: "FAQ", href: "#faq" },
   ];
@@ -33,7 +33,6 @@ export default function Navbar() {
           <span className="text-gray-300">Operating</span>
         </a>
 
-        {/* Desktop */}
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
             <a
@@ -45,45 +44,30 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="#contact"
+            href="https://calendly.com/njessemandevamirtham/15-min-strategy-call"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-sm font-medium px-5 py-2.5 rounded-lg bg-brand-500 hover:bg-brand-600 text-white transition-colors"
           >
             Book a Call
           </a>
         </div>
 
-        {/* Mobile toggle */}
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
           className="md:hidden text-gray-400 hover:text-white"
           aria-label="Toggle menu"
         >
-          <svg
-            className="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             {mobileOpen ? (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M6 18L18 6M6 6l12 12"
-              />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             ) : (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16M4 18h16"
-              />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
             )}
           </svg>
         </button>
       </div>
 
-      {/* Mobile menu */}
       {mobileOpen && (
         <div className="md:hidden bg-gray-950/95 backdrop-blur-xl border-b border-white/5 px-6 pb-6">
           {navLinks.map((link) => (
@@ -97,7 +81,9 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="#contact"
+            href="https://calendly.com/njessemandevamirtham/15-min-strategy-call"
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={() => setMobileOpen(false)}
             className="block mt-3 text-center font-medium px-5 py-2.5 rounded-lg bg-brand-500 hover:bg-brand-600 text-white transition-colors"
           >
